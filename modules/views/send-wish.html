@@ -1,0 +1,29 @@
+<!--<div class="row">-->
+<header class='wishhead text-right text-white'>
+    <div class="masthead-content">
+        <h1 class="masthead-heading mb-0">Hi there!</h1>
+        <h2 class="masthead-subheading mb-0">Please fill this form to send SHAIFALI a message on her birthday...</h2>
+    </div>
+</header>
+<br>
+    <div class="col-md-12">
+        <form name="wish" ng-submit="sendWish()" class="wishes">
+            <div class="form-grp">  
+                <label class="form-label">Enter your NAME here:</label>
+                <input class="form-control" type="text" ng-model="app.wish.name" title="Enter your name" required>
+            </div>
+            <div class="form-grp">
+                <label class="form-label">Enter the MESSAGE you want to convey:</label>
+                <textarea class="form-control" ng-model="app.wish.msg" style="height: 115px" title="Enter your message" required></textarea>
+            </div>
+            <div class="form-grp">
+                <label class="form-label">Please attach your photograph with her, Square images will look great ;) :</label>
+                <input type="file" id="profilePic" class="btn" title="Attach Photo"  >
+                <!--onchange="angular.element(this).scope().addImage(this)"-->
+            </div>
+            <div class="form-grp">
+                <button type="submit" class="btn btn-primary" style="width: 150px;margin: auto;display: block" >Send a Wish</button>
+            </div>
+        </form>
+    </div>
+<!--</div>-->

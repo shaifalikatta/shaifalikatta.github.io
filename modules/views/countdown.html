@@ -1,0 +1,53 @@
+<link href="css/countdown.css" rel="stylesheet">
+<link href="css/util.css" rel="stylesheet">
+
+
+<div ng-init="initializeClock('clockdiv')"
+	 class="bg-img1 size1 flex-w flex-c-m p-t-55 p-b-70 p-l-15 p-r-15 header counthead" style="background-image: url('img/countdown_low.gif'); background-position: center left; background-repeat: repeat-y;">
+	<div class="wsize1 bor1 bg1 p-t-40 p-b-45 p-l-15 p-r-15 respon1 txt-center">
+
+        <div class ="txt-center m1-txt1 p-t-33 p-b-68" ng-hide="countdown.after">
+            <p>Coming Soon!</p>
+        </div>
+        
+        
+        <div class ="txt-center m1-txt1 p-t-33 p-b-68" ng-show="countdown.after">
+            <p>Yay... It's Here!</p>
+        </div>
+
+		<div id="clockdiv" class="wsize2 flex-w flex-c hsize1 cd100">
+			<div class="flex-col-c-m size2 how-countdown">
+				<span class="l1-txt1 p-b-9 days"></span>
+				<span class="s1-txt1">Days</span>
+			</div>
+
+			<div class="flex-col-c-m size2 how-countdown">
+				<span class="l1-txt1 p-b-9 hours"></span>
+				<span class="s1-txt1">Hours</span>
+			</div>
+
+			<div class="flex-col-c-m size2 how-countdown">
+				<span class="l1-txt1 p-b-9 minutes"></span>
+				<span class="s1-txt1">Minutes</span>
+			</div>
+
+			<div class="flex-col-c-m size2 how-countdown">
+				<span class="l1-txt1 p-b-9 seconds"></span>
+				<span class="s1-txt1">Seconds</span>
+			</div>
+		</div>
+			<div class="flex-c-m" ng-hide="countdown.after">
+				<button id="sendWish" ui-sref="root.sendWish" class=" s1-txt3 size3 how-btn trans-04 where1">
+					SEND A WISH
+				</button>
+			</div>
+			<div class="flex-c-m" ng-show="countdown.after" >
+				<button id="seeWish" ui-sref="root.wishes" class=" s1-txt3 size3 how-btn trans-04 where1">
+					SEE WISHES
+				</button>
+               <button id="sendWish" ui-sref="root.sendWish" class=" s1-txt3 size3 how-btn trans-04 where1">
+					Missed out!, send a wish
+				</button>
+			</div>
+	</div>
+</div>

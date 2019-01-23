@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Some people make the world more special just by being in it, and you made ours a Paradise. A very Happy Birthday Dear!">
+    <meta name="author" content="Pranjal Gupta">
+
+    <title>Ayushi Pandey - Happy Birthday!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="vendor/angular/angular-ui-router.min.js"></script>
+    <script src="vendor/angular/ocLazyLoad.min.js"></script>
+    <script src="modules/controller/app.js"></script>
+    <!-- <script src="modules/controller/app-controller.js"></script> -->
+    <script src="vendor/angular/firebase.js"></script>
+    <script src="vendor/angular/angularfire.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body ng-app="hbd">
+  <div id="commonError" class=" alert alert-danger alert-dismissable text-center"
+       style="display: none; position: fixed; top:24px; left: 10%; width:80%; z-index: 3000; font-size: 14px;">
+    <a class="close" ng-click="app.closeError()" aria-label="close">&times;</a>
+    <strong>Error!</strong> {{errorMesssage}}
+  </div>
+  <div id="commonSucess" class=" alert alert-success alert-dismissable text-center"
+       style="display: none; position: fixed; top:24px; left: 10%; width:80%; z-index: 3000; font-size: 14px;">
+    <a class="close" ng-click="app.closeError()" aria-label="close">&times;</a>
+    <strong>Success!</strong> {{successMesssage}}
+  </div>
+    <!-- Navigation -->
+
+    <div ui-view="main">
+
+    </div>
+
+    <!-- Footer -->
+    <!--<footer class="py-5 bg-black">-->
+      <!--<div class="container">-->
+        <!--<p class="m-0 text-center text-white small">Copyright &copy; Your Website 2018</p>-->
+      <!--</div>-->
+      <!--&lt;!&ndash; /.container &ndash;&gt;-->
+    <!--</footer>-->
+
+  </body>
+
+</html>

@@ -1,0 +1,219 @@
+body {
+  font-family: 'Lato';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Catamaran';
+  font-weight: 800 !important;
+}
+
+.btn-xl {
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.bg-black {
+  background-color: #000 !important;
+}
+
+.rounded-pill {
+  border-radius: 5rem;
+}
+
+.form-label{
+  font-family: 'Catamaran';
+  font-weight: 800 !important;
+}
+
+.navbar-custom {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-custom .navbar-brand {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+header.counthead{
+  padding-top: calc(33rem - 1px);
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  background-image: url("../img/gif/1.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header.wishhead{
+  padding-top: calc(25rem - 1px);
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  background-image: url("../img/sendwish.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header.masthead {
+  padding-top: 1rem;
+  padding-bottom: calc(25rem - 1px);
+  background-image: url("../img/canvas.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header.masthead hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+  text-shadow: 2.5px 1px #635758;
+}
+header.masthead h2 {
+  color: rgba(255,255,255,.9);
+  text-shadow: 2.5px 2px #635758;
+}
+
+header.wishhead h1 {
+  font-size: 2rem;
+  text-shadow: 4px 3px #635758;
+}
+header.wishhead h2 {
+  color: rgba(255,255,255,.9);
+  text-shadow: 4px 3px #635758;
+}
+
+header.masthead p {
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 992px) {
+
+  header.counthead {
+  background-position: center left;
+
+    }
+    
+  header.masthead {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: calc(10rem + 455px);
+    padding-bottom: 10rem;
+  }
+  header.masthead h1 {
+    font-size: 4rem;
+  }
+  header.masthead h2 {
+    font-size: 2.5rem;
+  }
+    
+  header.wishhead {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: calc(50rem);
+    padding-bottom: 7rem;
+    padding-right: 2rem;
+  }
+  header.wishhead h1 {
+    font-size: 4rem;
+  }
+  header.wishhead h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  header.counthead {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: calc(10rem + 455px);
+    padding-bottom: 10rem;
+  }
+
+  @media (min-width: 1200px) {
+    header.masthead h1 {
+      font-size: 4rem;
+    }
+  }
+
+
+
+  .bg-primary {
+    background-color: #ee0979 !important;
+  }
+
+  .btn-primary {
+    background-color: #ee0979;
+    border-color: #ee0979;
+  }
+
+  .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+    background-color: #bd0760 !important;
+    border-color: #bd0760 !important;
+  }
+
+  .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(238, 9, 121, 0.5);
+  }
+
+  .btn-secondary {
+    background-color: #ff6a00;
+    border-color: #ff6a00;
+  }
+
+  .btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
+    background-color: #cc5500 !important;
+    border-color: #cc5500 !important;
+  }
+
+  .btn-secondary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .ordering:nth-child(odd) .container .images, .ordering:nth-child(even) .container .texts {
+    order: 1;
+  }
+
+  .ordering:nth-child(even) .container .images, .ordering:nth-child(odd) .container .texts {
+    order: 2;
+
+  }
+}
